@@ -1,12 +1,12 @@
 
 const BasicQueriesPanel = () => {
   return (
-    <div className="flex flex-col p-16">
-        <span className="text-gray-400 text-2xl mb-2">Ryazan</span>
-        <span className="text-gray-400 text-2xl mb-2">Omsk</span>
-        <span className="text-gray-400 text-2xl mb-2">Novosibirsk</span>
-        <span className="text-gray-400 text-2xl mb-2">Vladivostok</span>
-        <span className="text-gray-400 text-2xl mb-2">Irkutsk</span>
+    <div className="flex flex-col py-16 px-12">
+        <span className="basicQueriesPanel-item">Ryazan</span>
+        <span className="basicQueriesPanel-item">Omsk</span>
+        <span className="basicQueriesPanel-item">Novosibirsk</span>
+        <span className="basicQueriesPanel-item">Vladivostok</span>
+        <span className="basicQueriesPanel-item">Irkutsk</span>
     </div>
   )
 }
