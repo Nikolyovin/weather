@@ -7,7 +7,7 @@ import WeatherDetails from './WeatherDetails'
 const SideBar = () => {
   return (
     <div className = 'w-[25%] h-[100%] bg-gray-700 bg-opacity-60' >
-      <SearchPanel/>
+      {/* <SearchPanel/> */}
       <Divider sx = {{borderColor: '#9e9e9e', pt: 10}} variant='middle' />
       <BasicQueriesPanel/>
       <Divider sx = {{borderColor: '#9e9e9e',}} variant='middle' />
