@@ -1,8 +1,12 @@
 import CardWeather from "./components/CardWeather";
 import SideBar from "./components/SideBar";
+import { useSearchCityQuery } from "./store/weather/weather.api";
 
 
 function App() {
+  const { isLoading, isError, data: weather } = useSearchCityQuery([55.75, 37.63]) // обновляет данные, если после долгого промежутка возращаемся, но нужно настроить в сторе
+  console.log('weather', weather);
+
   return (
     <div className="w-[100%] h-[100vh] flex">
       {/* <img 
@@ -17,7 +21,8 @@ function App() {
       />
       <div className="flex flex-col flex-1 lex-col z-[100] h-[100%] pl-[150px] pb-[150px] pt-[50px]">
         <span className="flex-1 font-serif text-xl text-white">the.weather</span>
-        <CardWeather/>
+        { isLoading && <p className='text-center'> Loading...</p> }
+        { weather && <CardWeather />}
       </div>
       <SideBar/>
     </div>

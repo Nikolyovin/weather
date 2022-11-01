@@ -1,6 +1,6 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
-import { weatherApi } from "./weather/github.api";
+import { weatherApi } from "./weather/weather.api";
 
 export const store = configureStore({
     reducer: {

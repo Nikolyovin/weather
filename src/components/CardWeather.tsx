@@ -1,7 +1,13 @@
 import CloudOutlinedIcon from '@mui/icons-material/CloudOutlined';
 import { grey, pink } from '@mui/material/colors';
+import { useAppSelector } from './hooks/redux';
 
 const CardWeather = () => {
+
+  const { queries } = useAppSelector(state => state['weather/api'])
+  console.log('queries', queries);
+  
+
   return (
     <div className="flex items-center">
         <span className="text-[94px] font-sans text-white mr-2" >05°</span>
