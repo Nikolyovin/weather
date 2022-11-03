@@ -22,9 +22,9 @@ const WeatherDetails: React.FC = () => {
                 <span className="text-gray-100 text-lg ">8mm</span>
             </div>
 
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default WeatherDetails

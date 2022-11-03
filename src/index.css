@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {                                     /*чтобы стили после, .basicQueriesPanel-item можно было переназначить*/
+@layer components {
+
+    /*чтобы стили после, .basicQueriesPanel-item можно было переназначить*/
     .basicQueriesPanel-item {
         @apply text-gray-300 text-lg mb-3
     }
