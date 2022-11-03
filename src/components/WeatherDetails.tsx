@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WeatherDetails = () => {
+const WeatherDetails: React.FC = () => {
   return (
     <div className="flex flex-col py-16 px-12">
         <span className="text-gray-100 text-lg mb-3">Weather Details</span>

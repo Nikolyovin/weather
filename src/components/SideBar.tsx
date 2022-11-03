@@ -4,7 +4,7 @@ import BasicQueriesPanel from './BasicQueriesPanel'
 import SearchPanel from './SearchPanel'
 import WeatherDetails from './WeatherDetails'
 
-const SideBar = () => {
+const SideBar: React.FC = () => {
   return (
     <div className = 'w-[25%] h-[100%] bg-gray-700 bg-opacity-60' >
       {/* <SearchPanel/> */}

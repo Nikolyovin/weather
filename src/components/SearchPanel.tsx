@@ -2,7 +2,7 @@ import { createTheme, IconButton, TextField, ThemeProvider } from '@mui/material
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 
-const SearchPanel = () => {
+const SearchPanel: React.FC = () => {
   const [ search, setSearch ] = useState('')
   
   return (
