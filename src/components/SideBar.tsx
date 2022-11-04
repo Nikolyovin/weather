@@ -6,13 +6,13 @@ import WeatherDetails from './WeatherDetails'
 
 const SideBar: React.FC = () => {
   return (
-    <div className = 'w-[25%] h-[100%] bg-gray-700 bg-opacity-60' >
+    <div className='w-[25%] h-[100%] bg-gray-700 bg-opacity-60' >
       {/* <SearchPanel/> */}
-      <Divider sx = {{borderColor: '#9e9e9e', pt: 10}} variant='middle' />
-      <BasicQueriesPanel/>
-      <Divider sx = {{borderColor: '#9e9e9e',}} variant='middle' />
-      <WeatherDetails/>
-      <Divider sx = {{borderColor: '#9e9e9e',}} variant='middle' />
+      <Divider sx={{ borderColor: '#9e9e9e', pt: 8 }} variant='middle' />
+      <BasicQueriesPanel />
+      <Divider sx={{ borderColor: '#9e9e9e', }} variant='middle' />
+      <WeatherDetails />
+      <Divider sx={{ borderColor: '#9e9e9e', }} variant='middle' />
     </div>
   )
 }
