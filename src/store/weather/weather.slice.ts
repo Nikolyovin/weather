@@ -1,11 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { defaultCoordinates } from "../../helpers"
 
 type initialStateType = { 
-    activeCoordinates: number[] | null
+    activeCoordinates: number[] 
 }
 
 const initialState: initialStateType = {
-    activeCoordinates: null
+    activeCoordinates: defaultCoordinates
 }
 
 export const weatherSlice = createSlice({

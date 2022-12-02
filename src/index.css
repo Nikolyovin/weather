@@ -9,3 +9,9 @@
         @apply text-gray-300 text-lg mb-3
     }
 }
+
+.icon{
+    filter:invert(100%) sepia(55%) saturate(161%) hue-rotate(297deg) brightness(116%) contrast(92%);
+    width: 60px;
+    height: 60px;
+}

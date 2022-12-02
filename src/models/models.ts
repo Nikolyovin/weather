@@ -16,3 +16,9 @@ export interface ServerResponse {
     elevation: number;
     current_weather: CurrentWeather;
 }
+
+export type CitiesType = {
+    className: string
+    title: string,
+    coordinates: number[]
+}
