@@ -2,12 +2,12 @@ import React, { FC } from 'react'
 import CloudOutlinedIcon from '@mui/icons-material/CloudOutlined'
 import { grey } from '@mui/material/colors'
 import LightModeIcon from '@mui/icons-material/LightMode'
-import iconFog from '../../public/fog.png'
-import iconDrizzle from '../../public/drizzle.png'
-import iconRain from '../../public/rainy.png'
-import iconFreezing from '../../public/freezing.png'
-import iconSnow from '../../public/snow.png'
-import iconThunderstorm from '../../public/thunderstorm.png'
+import iconFog from '../assets/fog.png'
+import iconDrizzle from '../assets/drizzle.png'
+import iconRain from '../assets/rainy.png'
+import iconFreezing from '../assets/freezing.png'
+import iconSnow from '../assets/snow.png'
+import iconThunderstorm from '../assets/thunderstorm.png'
 
 interface IProps {
     weathercode: number
@@ -18,7 +18,6 @@ const IconWeather: FC<IProps> = ({ weathercode }) => {
         color: grey[100],
         fontSize: 80
     }
-    console.log('weathercode:', weathercode)
 
     const styleIconFilter = {
         filter: 'invert(100%) sepia(55%) saturate(161%) hue-rotate(297deg) brightness(116%) contrast(92%)',
@@ -49,8 +48,8 @@ const IconWeather: FC<IProps> = ({ weathercode }) => {
             {isDrizzle && <img src={iconDrizzle} style={styleIconFilter} alt='fog' />}
             {isRain && <img src={iconRain} style={styleIconFilter} alt='fog' />}
             {isFreezing && <img src={iconFreezing} style={styleIconFilter} alt='fog' />}
-            {isSnow && <img src={iconFreezing} style={styleIconFilter} alt='fog' />}
-            {isThunderstorm && <img src={iconFreezing} style={styleIconFilter} alt='fog' />}
+            {isSnow && <img src={iconSnow} style={styleIconFilter} alt='fog' />}
+            {isThunderstorm && <img src={iconThunderstorm} style={styleIconFilter} alt='fog' />}
         </div>
     )
 }
