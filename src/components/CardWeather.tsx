@@ -3,7 +3,7 @@ import { CurrentWeather } from '../models/models'
 import moment from 'moment'
 import 'moment/locale/en-gb'
 import 'moment-timezone'
-import { cities, defaultCoordinates } from '../helpers'
+import { cities, defaultActive, defaultCoordinates } from '../helpers'
 import IconWeather from './IconWeather'
 
 type CardWeatherProps = {
@@ -16,7 +16,8 @@ const CardWeather: React.FC<CardWeatherProps> = ({ weather, activeCoordinates = 
     const { temperature, weathercode } = weather
 
     useEffect(() => {
-        const cityName: string = cities.find(({ coordinates }) => coordinates === activeCoordinates)?.title ?? 'Ryzan'
+        const cityName: string =
+            cities.find(({ coordinates }) => coordinates === activeCoordinates)?.title ?? defaultActive
         setCityName(cityName)
     }, [activeCoordinates])
 
